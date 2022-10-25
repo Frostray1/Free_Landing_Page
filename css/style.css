@@ -7,15 +7,9 @@
   src: url("/fonts/Gilroy-Medium.ttf");
 }
 
-/* .container {
-  height: 750px;
-} */
-
 .header {
   width: 943px;
-
   margin: 0 auto;
-  /* background-color: red; */
 }
 
 .menu__list {
@@ -75,6 +69,7 @@
 }
 
 .aboutMe {
+  margin-top: 100px;
   background-color: #f6f6f6;
   height: 506px;
 }
@@ -85,7 +80,7 @@
 }
 
 .aboutMe__heading {
-    padding-top: 120px;
+  padding-top: 120px;
   text-align: center;
   font-family: "Gilroy-Bold";
   font-size: 34px;
@@ -101,5 +96,131 @@
   width: 485px;
   height: 218px;
   margin-left: 240px;
+}
 
+.skills {
+  height: 610px;
+  text-align: center;
+}
+
+.skills__heading {
+  padding-top: 91px;
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+}
+
+.skills__text {
+  margin-top: 69px;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+}
+
+.skills__list {
+  list-style-type: none;
+  display: flex;
+  margin-left: 10px;
+}
+
+.skills__list li {
+  color: #828282;
+  margin-right: 90px;
+  margin-top: 83px;
+}
+
+.skills__rating {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  letter-spacing: 9px;
+}
+
+.skills__rating span {
+  opacity: 0.1;
+}
+
+.portfolio {
+  height: 2253px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.portfolio__heading {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  padding-top: 112px;
+  padding-bottom: 47px;
+}
+.portfolio__list {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  list-style-type: none;
+}
+.portfolio__list li {
+  padding-bottom: 99px;
+}
+.portfolio__list li img {
+  padding-bottom: 45px;
+}
+.portfolio__list li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #070707;
+  text-decoration-line: underline;
+}
+
+.contacts {
+  height: 622px;
+
+  text-align: center;
+}
+
+.contacts__heading {
+  padding-top: 114px;
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+}
+
+.contacts__text {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.contacts__button {
+  width: 180px;
+  height: 42px;
+  border: 2px solid #070707;
+  border-radius: 25px;
+  background-color: black;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 381px;
+}
+
+.contacts__button a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  color: white;
+}
+
+.contacts__icon {
+  list-style-type: none;
+  display: flex;
+  margin-left: 200px;
+  padding-top: 86px;
+}
+
+.contacts__icon li {
+  padding-left: 61px;
+}
+
+.contacts__subscriptionText {
+    padding-top: 40px;
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  color: #828282;
 }
