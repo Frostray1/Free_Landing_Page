@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("/fonts/Gilroy-Medium.ttf");
+}
+
+/* .container {
+  height: 750px;
+} */
+
+.header {
+  width: 943px;
+
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.menu__list {
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  list-style-type: none;
+  font-weight: lighter;
+  display: flex;
+  padding: 0;
+}
+
+.menu__list li {
+  margin-top: 33px;
+  margin-right: 156px;
+  white-space: nowrap;
+  color: #828282;
+}
+
+.menu__list li:hover {
+  color: #070707;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.menu__hr {
+  border: 1px solid #828282;
+  margin-top: 31px;
+}
+
+.profile__name {
+  font-family: "Gilroy-Bold";
+  font-size: 47px;
+  color: #070707;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+.profile__about {
+  font-family: "Gilroy-Medium";
+  display: inline-block;
+  font-size: 18px;
+  width: 155px;
+  margin-left: 297px;
+}
+
+.profile__lang {
+  font-family: "Gilroy-Bold";
+  display: inline-block;
+  font-size: 16px;
+  color: #828282;
+  transform: rotate(-90deg);
+  margin-top: 85px;
+  float: right;
+}
+.profile__lang span {
+  color: black;
+}
+
+.aboutMe {
+  background-color: #f6f6f6;
+  height: 506px;
+}
+
+.container {
+  width: 943px;
+  margin: 0 auto;
+}
+
+.aboutMe__heading {
+    padding-top: 120px;
+  text-align: center;
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.aboutMe__description {
+  text-align: center;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 22px;
+  width: 485px;
+  height: 218px;
+  margin-left: 240px;
+
+}
