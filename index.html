@@ -10,17 +10,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="menu">
+      <div id="header" class="header">
+        <div class="menu-burger__header">
+          <span></span>
+      </div>
+        <nav class="menu">
           <ul class="menu__list">
-            <li>Home</li>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contacts</li>
+            <li><a href="#qheader">Home</a></li>
+            <li><a href="#qaboutMe">About me</a></li>
+            <li><a href="#qskills">Skills</a></li>
+            <li><a href="#qportfolio">Portfolio</a></li>
+            <li><a href="#qcontacts">Contacts</a></li>
           </ul>
           <hr class="menu__hr" />
-        </div>
+        </nav>
         <div class="profile">
           <h1 class="profile__name">
             Denis <br />
@@ -36,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="aboutMe">
+    <div id="aboutMe" class="aboutMe">
       <div class="container">
         <h1 class="aboutMe__heading">About me</h1>
         <p class="aboutMe__description">
@@ -54,7 +57,7 @@
         </p>
       </div>
     </div>
-    <div class="skills">
+    <div id="skills" class="skills">
       <div class="container">
         <h1 class="skills__heading">Skills</h1>
         <p class="skills__text">I work in such programs as</p>
@@ -222,7 +225,7 @@
         </ul>
       </div>
     </div>
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
       <div class="container">
         <h1 class="portfolio__heading">Portfolio</h1>
         <ul class="portfolio__list">
@@ -242,7 +245,7 @@
       </div>
     </div>
 
-    <div class="contacts">
+    <div id="contacts" class="contacts">
       <div class="container">
         <h1 class="contacts__heading">Contacts</h1>
         <p class="contacts__text">
@@ -376,4 +379,6 @@
       </div>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/menu.js"></script> 
 </html>
