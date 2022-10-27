@@ -1,0 +1,81 @@
+@media (max-width: 975px) {
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    
+  }
+  .menu-burger__header {
+    position: relative; /* задаем относительное позиционирование */
+    width: 33px; /* определяем размеры блока */
+    height: 15px;
+    display: block;
+    float: right;
+
+    margin-top: 30px;
+  }
+  .menu__hr {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu__list {
+    display: block;
+    float: right;
+  }
+
+  .profile__name {
+    display: block;
+  }
+  .profile__about {
+    display: inline-block;
+    margin: 0;
+  }
+  .profile__img {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .profile__lang {
+    display: inline-block;
+    margin: 0;
+    transform: rotate(0deg);
+
+  }
+  .skills{
+    height: 800px;
+  }
+  .skills__list{
+    display: block;
+    column-count: 2;
+    margin-top: 60px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .skills__list li{
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+
+
+  .portfolio{
+    display: block;
+    height: 1700px;
+  }
+  .portfolio__list{
+    padding: 0;
+  }
+  .contacts__button{
+    display: block;
+    margin-left: 0;
+    width:auto;
+  }
+
+  .contacts__icon{
+    margin:0;
+    padding-left: 100px;
+    padding-top: 40px;
+  }
+}

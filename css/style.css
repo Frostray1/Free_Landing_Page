@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: Gilroy-Bold;
   src: url("/fonts/Gilroy-Bold.ttf");
@@ -8,7 +9,7 @@
 }
 
 .header {
-  /* width: 943px; */
+  max-width: 1001px;
   margin: 0 auto;
 }
 .menu-burger__header {
@@ -25,7 +26,8 @@
 
 .menu__list li {
   margin-top: 33px;
-  margin-right: 156px;
+  margin-right: 16.5%;
+  /* flex:0 1 5550%; */
 }
 
 .menu__list a {
@@ -44,48 +46,8 @@
 }
 
 
-/* ------------ */
-.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  background: black;
-  margin: 0 auto;
-}
-.menu-burger__header span{
-  top: 15px;
-}
-.menu-burger__header:after, .menu-burger__header:before{
-  content: '';
-}
-.menu-burger__header:after{
-  bottom: -8px;
-}
-.menu-burger__header:before{
-  top: 9px;
-}
-/* крестик анимация */
-.menu-burger__header.open-menu span {
-  opacity:0; 
-  transition: 0.5s; 
-  z-index:200;
-}
-.menu-burger__header.open-menu:before {
-  transform: rotate(41deg);
-  top: 13px;
-  transition: 0.4s;
-}
-.menu-burger__header.open-menu:after {
-  transform: rotate(-41deg);
-  bottom: 0px;
-  transition: 0.4s;
-}
 
-.menu.open-menu {
-  left: 0;
-  display: block;
-}
-/* ------------ */
+
 
 
 
@@ -106,8 +68,8 @@
   font-family: "Gilroy-Medium";
   display: inline-block;
   font-size: 18px;
-  width: 155px;
-  margin-left: 297px;
+  /* width: 155px; */
+  margin-left: 24%;
 }
 
 .profile__lang {
@@ -122,6 +84,13 @@
 .profile__lang span {
   color: black;
 }
+.profile__img{
+  width: 100%;
+}
+
+.profile__imgMobile{
+  display: none;
+}
 
 .aboutMe {
   margin-top: 100px;
@@ -130,10 +99,13 @@
 }
 
 .container {
-  width: 943px;
+  max-width: 943px;
   margin: 0 auto;
 }
-
+.AboutMe__container{
+  /* width: 485px; */
+  /* margin-left: 220px; */
+}
 .aboutMe__heading {
   padding-top: 120px;
   text-align: center;
@@ -148,9 +120,12 @@
   font-size: 18px;
   font-weight: lighter;
   line-height: 22px;
-  width: 485px;
-  height: 218px;
-  margin-left: 240px;
+  margin-top:40px;
+
+  
+  /* height: 218px; */
+  /* margin-left: 240px; */
+  word-wrap: break-word;
 }
 
 .skills {
@@ -178,7 +153,8 @@
 
 .skills__list li {
   color: #828282;
-  margin-right: 90px;
+  /* flex: 0 1 20%; */
+  margin-right: 9%;
   margin-top: 83px;
 }
 
@@ -208,6 +184,9 @@
   font-family: "Gilroy-Medium";
   font-size: 18px;
   list-style-type: none;
+}
+.portfolio__list img{
+width: 100%;
 }
 .portfolio__list li {
   padding-bottom: 99px;
@@ -265,12 +244,12 @@
 .contacts__icon {
   list-style-type: none;
   display: flex;
-  margin-left: 200px;
+  margin-left: 175px;
   padding-top: 86px;
 }
 
 .contacts__icon li {
-  padding-left: 61px;
+  padding-left: 50px;
 }
 
 .contacts__subscriptionText {
@@ -281,36 +260,3 @@
 }
 
 /* ------------------------ */
-@media(max-width: 767px){
-  .menu-burger__header {
-      position: relative; /* задаем относительное позиционирование */
-      width: 20px; /* определяем размеры блока */
-      height: 15px;
-      display: block;
-     float: right;
-     margin-top: 38px;
-  }
-  .menu__hr{
-    display: none;
-  }
-  .menu{
-      display: none;
-      position: absolute;
-      float: right;
-   
-   
-      
-      margin-left: 100%;
-      /* left: 100%; */
-    transition: all 0.4s ease;
-  }
-  .menu__list{
-    display: block;
-    float:right;
-    
-  }
-  .profile__name{
-    display: block;
-    margin-left: 20px;
-  }
-}

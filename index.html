@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en,ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/mobile-version.css">
     <title>Free_Landing_Page</title>
   </head>
   <body>
@@ -32,29 +35,34 @@
           <p class="profile__about">UX | UI designer 24 years old, Minsk</p>
           <p class="profile__lang">RU <span>| ENG</span></p>
           <img
-            class="profile_img"
+            class="profile__img"
             src="/img/profileImage.png"
             alt="profileImage"
+          />
+          <img
+            class="profile__imgMobile"
+            src="/img/profileImageMobile.png"
+            alt="profileImageMobile"
           />
         </div>
       </div>
     </div>
     <div id="aboutMe" class="aboutMe">
       <div class="container">
-        <h1 class="aboutMe__heading">About me</h1>
+        <div class="AboutMe__container">
+          <h1 class="aboutMe__heading">About me</h1>
         <p class="aboutMe__description">
-          Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
-          and everything connected with it.
-          <br />
-          <br />
-          <br />
-          I'm studying at courses "Web and mobile design interfaces" in
-          IT-Academy.
-          <br />
-          <br />
-          <br />
-          Ready to implement excellent projects with wonderful people.
+          Hi, I'm Denis – UX/UI designer from Minsk. 
+          I'm interested in design
+          and everything connected with it.</p>
+        
+          <p class="aboutMe__description">I'm studying at courses "Web and mobile design interfaces" in
+            IT-Academy.</p>
+         
+          <p class="aboutMe__description">Ready to implement excellent projects with wonderful people.</p>
         </p>
+        </div>
+        
       </div>
     </div>
     <div id="skills" class="skills">
