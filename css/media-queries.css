@@ -3,7 +3,6 @@
     width: 600px;
     margin: 0 auto;
     position: relative;
-    
   }
   .menu-burger__header {
     position: relative; /* задаем относительное позиционирование */
@@ -20,20 +19,23 @@
   .menu {
     display: none;
   }
-  .menu.open-menu{
+  .menu.open-menu {
     display: block;
-    
   }
   .menu__list {
-    display: block;
+    display: flex;
     float: right;
-    margin-top:0;
+    margin-top: 0;
     margin-bottom: 0;
-    
+    margin-top: 10px;
     position: absolute;
-    margin-left: 80%;
+    margin-left: 22%;
   }
-  
+
+  .menu__list li a{
+    font-size: 14px;
+    color:black;
+  }
 
   .profile__name {
     display: block;
@@ -50,45 +52,123 @@
     display: inline-block;
     margin: 0;
     transform: rotate(0deg);
-
   }
-  .profile__lang--open-menu{
-    display: none;
-  }
-  .skills{
+  
+  .skills {
     height: 800px;
   }
-  .skills__list{
+  .skills__list {
     display: block;
     column-count: 2;
     margin-top: 60px;
     padding-left: 0;
     margin-left: 0;
   }
-  .skills__list li{
+  .skills__list li {
     margin-right: 0;
     margin-top: 0;
     padding-top: 20px;
   }
 
-
-
-  .portfolio{
+  .portfolio {
     display: block;
     height: 1700px;
   }
-  .portfolio__list{
+  .portfolio__list {
     padding: 0;
   }
-  .contacts__button{
+  .contacts__button {
     display: block;
     margin-left: 0;
-    width:auto;
+    width: auto;
   }
 
-  .contacts__icon{
-    margin:0;
+  .contacts__icon {
+    margin: 0;
     padding-left: 100px;
     padding-top: 40px;
   }
+}
+
+@media (max-width: 618px) {
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .profile__img {
+    display: none;
+  }
+  .profile__imgMobile {
+    width: 100%;
+    display: block;
+  }
+
+  .profile__about {
+    width: 51%;
+    padding-bottom: 20px;
+  }
+
+  .profile__lang {
+    display: none;
+  }
+  .menu.open-menu {
+    z-index: 10000;
+  }
+
+  .menu__list {
+    display: block;
+    font-size: 34px;
+    margin-left: 0;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    margin-top: 0;
+  }
+  .menu__list li a {
+    font-size: 34px;
+    color: black;
+  }
+  .profile__imgMobile--open-menu {
+    visibility: hidden;
+  }
+  .aboutMe__heading {
+    padding-top: 75px;
+  }
+
+  .skills {
+    height: 1300px;
+  }
+  .skills__heading {
+    padding-top: 50px;
+  }
+  .skills__list {
+    column-count: 1;
+    margin-top: 0px;
+  }
+
+  .skills__list li {
+    padding-top: 40px;
+  }
+
+  .portfolio {
+    height: 1185px;
+  }
+  .portfolio__heading {
+    padding-top: 60px;
+  }
+
+  .contacts__icon{
+    padding-left: 0;
+  }
+  .contacts__icon li {
+    padding-left: 28px;
+
+  }
+
+
+
+
+
+
 }
