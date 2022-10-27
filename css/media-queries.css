@@ -2,6 +2,7 @@
   .container {
     width: 600px;
     margin: 0 auto;
+    position: relative;
     
   }
   .menu-burger__header {
@@ -19,11 +20,20 @@
   .menu {
     display: none;
   }
-
+  .menu.open-menu{
+    display: block;
+    
+  }
   .menu__list {
     display: block;
     float: right;
+    margin-top:0;
+    margin-bottom: 0;
+    
+    position: absolute;
+    margin-left: 80%;
   }
+  
 
   .profile__name {
     display: block;
@@ -41,6 +51,9 @@
     margin: 0;
     transform: rotate(0deg);
 
+  }
+  .profile__lang--open-menu{
+    display: none;
   }
   .skills{
     height: 800px;
